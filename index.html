@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+
+    <!-- Font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./src/dist/output.css">
+
+    <!-- Scripts -->
+    <script src="./src/app/js/script.js" defer></script>
+
+  </head>
+  <body class="font-Libre min-h-screen pt-24 px-7 pb-10 tablet:grid tablet:place-content-center">
+
+    <div class="wrapper max-w-[730px]">
+      <header class="grid place-items-center mb-8">
+        <img src="./assets/images/logo.svg" alt="ping logo" class="h-4 mb-9 tablet:h-5">
+        <article class="text-center">
+          <h1 class="text-2xl text-Gray mb-4 tablet:text-3xl">We are launching <strong class="font-semibold text-Very_Dark_Blue">soon!</strong></h1>
+          <p class="text-Very_Dark_Blue text-sm  tablet:text-base">Subscribe and get notified</p>
+        </article>
+      </header>
+      
+      <main class="grid place-items-center mb-32">
+        <form action="http://127.0.0.1:5500/assets/images/Creepy-pasta.jpg" method="get" class="text-center w-full mb-20 px-3 grid tablet:grid-rows-none tablet:grid-cols-[1fr_minmax(auto,_220px)] tablet:gap-3">
+          <input id="email" type="text" placeholder="Your email address..." class="w-full border-2 outline-none border-Pale_Blue ps-8 pe-2 text-sm py-3 mb-3 rounded-full placeholder:text-Pale_Blue tablet:mb-0 flex-2">
+          <input id="submit" type="submit" value="Notify Me" class="block bg-Blue p-3 rounded-full text-white text-sm border border-Blue font-semibold shadow-xl flex-1 hover:bg-Hover_Blue hover:border-Hover_Blue hover:text-blue-700 active:scale-90 transition-all duration-150 ease-linear cursor-pointer">
+        </form>
+  
+        <img src="./assets/images/illustration-dashboard.png" alt="illustration of ping dashboard">
+      </main>
+  
+      <footer class="text-center">
+        <div class="social-icons text-Blue flex justify-center gap-4 mb-7 text-base tablet:text-lg flex-wrap">
+          <button class="active:scale-90 transition-all duration-100 ease-linear"><i class="fa-brands fa-facebook-f px-[11px] py-2 rounded-full border border-Pale_Blue hover:bg-Blue hover:text-white transition-all duration-200 ease-linear"></i></button>
+          <button class="active:scale-90 transition-all duration-100 ease-linear"><i class="fa-brands fa-twitter p-2 rounded-full border border-Pale_Blue hover:bg-Blue hover:text-white transition-all duration-200 ease-linear"></i></button>
+          <button class="active:scale-90 transition-all duration-100 ease-linear"><i class="fa-brands fa-instagram px-[10px] py-2 rounded-full border border-Pale_Blue hover:bg-Blue hover:text-white transition-all duration-200 ease-linear"></i></button>
+        </div>
+        <p class="text-Gray text-xs tablet:text-sm">&copy; Copyright Ping. All rights reserved.</p>
+      </footer>
+    </div>
+    
+  </body>
+</html>
